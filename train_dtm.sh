@@ -1,0 +1,12 @@
+python train_dtm.py \
+    --model-name efficientnetb7 \
+    --epochs 100 \
+    --batch-size 30 \
+    --test-batch-size 30 \
+    --lr 0.0005 \
+    --train-iteration 1000 \
+    --gpu 5,6,7 \
+    --num_workers 16 \
+    --out results/efficientnetb7_balance_ms1m \
+    --train-csv data/balance_affect_expw_aff.csv \
+    --unlabel-csv data/affect_aff_expw_all_ms1mv2_all.csv
